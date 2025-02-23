@@ -1,0 +1,26 @@
+.btn{
+    --btn-color:var(--bg-color);
+    --btn-bg-color:var(--text-primary-color);
+    border: 0;
+    background-color: transparent;
+    cursor:pointer;
+    width: fit-content;
+    border-radius:.5rem;
+    font:var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
+    color:var(--btn-color);
+    background-color:var(--btn-bg-color);
+}
+
+.btn-small{
+    padding:.5rem 1rem ;
+    font-size:var(--fw-md) var(--fs-sm)/1.5rem var(--ff-sans);
+}
+.btn-md{
+    padding:.75rem 1.5rem ;
+    font-size:var(--fw-md) var(--fs-md)/1.5rem var(--ff-sans);
+}
+
+.btn-lg{
+    padding:1rem 2rem ;
+    font-size:var(--fw-md) var(--fs-lg)/1.5rem var(--ff-sans);
+}
