@@ -1,7 +1,6 @@
 .container {
   --max-width: 375px;
   width: min(var(--max-width), 100% - var(--px-lg) * 2);
-  border: 1px solid pink;
   margin-inline: auto;
 }
 
@@ -18,6 +17,9 @@
 .px-lg {
   padding-inline: var(--px-lg);
 }
+.desktop-only{
+  display: none;
+}
 
 .even-columns{
   display: grid;
@@ -26,8 +28,14 @@
 .gap-1{
   gap:1rem
 }
+.gap-1\.5{
+  gap:1.5rem
+}
 .flex{
   display: flex;
+}
+.items-center{
+  align-items: center;
 }
 .grid{
   display: grid;
@@ -35,11 +43,14 @@
 
 @media (width >= 80em) {
   .container {
-    --max-width: 80em;
+    --max-width: 80em;  
 
   }
   .even-columns{
     grid-auto-flow: column;
     grid-auto-columns: 1fr;
+  }
+  .desktop-only{
+    display:  inherit;
   }
 }

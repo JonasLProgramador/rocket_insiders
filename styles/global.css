@@ -36,9 +36,10 @@ html {
   font-size: var(--fs-base);
   font-weight: var(--fs-base);
   font-family: var(--ff-sans);
-  color: var(--text-color-secondary);
+  color: var(--text-color-primary);
   background-color: var(--bg-color);
   line-height: 1.6;
+  
 }
 h1,
 h2,
@@ -62,6 +63,10 @@ h3{
 ul[role="list"]{
     list-style-type: none;
 }
+a{
+  color: var(--text-color-primary);
+  text-decoration: none;
+}
 
 a:hover{
   background: linear-gradient(
@@ -72,6 +77,7 @@ a:hover{
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  
 
 }
 
