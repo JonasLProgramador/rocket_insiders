@@ -1,74 +1,79 @@
-.btn{
-    --btn-color:var(--bg-color);
-    --btn-bg-color:var(--text-color-primary);
+.btn {
+    --btn-bg-color: var(--text-color-primary);
+    --btn-color: var(--bg-color);
     border: 0;
-    cursor:pointer;
-    width: fit-content;
-    border-radius:.5rem;
-    font:var(--fw-md) var(--fs-base)/1.5rem var(--ff-sans);
-    color:var(--btn-color);
-    background:var(--btn-bg-color);
+    background-color: transparent;
+  
     display: flex;
-    justify-content: center;
     align-items: center;
-}
-
-
-.btn:hover{
+    justify-content: center;
+    width: fit-content;
+  
+    border-radius: 0.5rem;
+  
+    font: var(--fw-md) var(--fs-base) / 1.5rem var(--ff-sans);
+  
+    cursor: pointer;
+  
+    background: var(--btn-bg-color);
+    color: var(--btn-color);
+  }
+  
+  .btn:hover {
     --btn-bg-color: linear-gradient(
-        90deg,
-        var(--brand-color-primary) 0%,
-        var(--brand-color-secondary) 100%
+      90deg,
+      var(--brand-color-secondary) 0%,
+      var(--brand-color-primary) 100%
     );
     --btn-color: var(--surface-color);
-    -moz-background-clip: initial;
+  
+    -webkit-background-clip: initial;
     background-clip: initial;
     color: var(--btn-color);
-}
-
-.btn-sm{
-    padding:.5rem 1rem ;
-    font-size:var(--fs-sm)
-}
-.btn-md{
-    padding:0.75rem 1.5rem ;
-    font-size: var(--fs-base)
-}
-
-.btn-lg{
-    padding:1rem 2rem ;
-    font-size:1.125rem;
-}
-
-.btn[aria-label]{
+  }
+  
+  .btn-sm {
+    padding: 0.5rem 1rem;
+    font-size: var(--fs-sm);
+  }
+  .btn-md {
+    padding: 0.75rem 1.5rem;
+    font-size: var(--fs-base);
+  }
+  .btn-lg {
+    padding: 1rem 2rem;
+    font-size: 1.125rem;
+  }
+  
+  .btn[aria-label] {
     position: relative;
-    &::before{
-        position: absolute;
-        content:"";
-        border-radius: inherit;
-        inset:1px;
-        background-color: var(--bg-color);
+  
+    &::before {
+      content: '';
+      position: absolute;
+      border-radius: inherit;
+      inset: 1px;
+      background-color: var(--bg-color);
     }
-    &::after{
-        content:attr(aria-label);
-        background:var(--btn-bg-color);
-        -moz-background-clip: text;
-        background-clip: text;
-        color: transparent;
-        position: relative;
-        z-index: 1;
+  
+    &::after {
+      content: attr(aria-label);
+      background: var(--btn-bg-color);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      position: relative;
+      z-index: 1;
     }
-    
-}
-
-@media(width >= 80em){
-    .btn-sm{
-        padding:.75rem 1.5rem ;
-        font-size: var(--fs-base)
+  }
+  
+  @media (width >= 80em) {
+    .btn-sm {
+      padding: 0.75rem 1.5rem;
+      font-size: var(--fs-base);
     }
-    
-    .btn-md{
-        padding:1rem 2rem ;
-        font-size:1.125rem;
+    .btn-md {
+      padding: 1rem 2rem;
+      font-size: 1.125rem;
     }
-}
+  }
