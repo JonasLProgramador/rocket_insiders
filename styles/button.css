@@ -31,7 +31,7 @@
     font-size:var(--fs-sm)
 }
 .btn-md{
-    padding:.75rem 1.5rem ;
+    padding:0.75rem 1.5rem ;
     font-size: var(--fs-base)
 }
 
@@ -46,7 +46,7 @@
         position: absolute;
         content:"";
         border-radius: inherit;
-        inset:1.5px;
+        inset:1px;
         background-color: var(--bg-color);
     }
     &::after{
